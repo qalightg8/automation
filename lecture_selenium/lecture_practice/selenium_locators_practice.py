@@ -45,8 +45,8 @@ def test_2(chrome):
     submit_button = chrome.find_element(By.XPATH, '//button[contains(text(), "Sub")]')
     submit_button.click()
 
-    result_name = chrome.find_element().text
-    result_name = chrome.find_element(By.).get_attribute('value')
+    # result_name = chrome.find_element(By.).text
+    # result_name = chrome.find_element(By.).get_attribute('value')
 
     pass
 

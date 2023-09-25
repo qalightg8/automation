@@ -34,3 +34,9 @@ class PageRozetkaNotebooks:
 
     def scroll_to_last_goods(self):
         pass
+
+    def activate_show_more(self):
+        element = self.driver.find_element(By.XPATH, '//a[starts-with(@class, "show-more")]')
+        _ = element.location_once_scrolled_into_view
+        element.click()
+        pass

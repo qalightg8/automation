@@ -1,3 +1,5 @@
+import time
+
 from lecture_selenium.pages.page_rozetka_notebooks import PageRozetkaNotebooks
 
 
@@ -17,6 +19,7 @@ class TestRozetkaScrolling:
     def test_goods_names(self, chrome):
         page = PageRozetkaNotebooks(chrome)
         page.open()
+        page.activate_show_more()
+        time.sleep(5)
         texts = page.get_goods_names()
-
-        assert len(texts) == 60
+        assert len(texts) == 120

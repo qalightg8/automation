@@ -11,3 +11,10 @@ def chrome():
     driver = webdriver.Chrome(options=options)
     yield driver
     driver.quit()
+
+
+@pytest.fixture()
+def firefox():
+    driver = webdriver.Firefox()
+    yield driver
+    driver.quit()

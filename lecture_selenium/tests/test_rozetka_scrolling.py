@@ -16,8 +16,8 @@ class TestRozetkaScrolling:
         page.open()
         assert page.is_scroll_to_paginator_works()
 
-    def test_goods_names(self, chrome):
-        page = PageRozetkaNotebooks(chrome)
+    def test_goods_names(self, firefox):
+        page = PageRozetkaNotebooks(firefox)
         page.open()
         page.activate_show_more()
         time.sleep(5)
